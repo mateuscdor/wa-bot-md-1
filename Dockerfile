@@ -1,6 +1,5 @@
 FROM quay.io/lyfe00011/md:beta
-RUN git clone https://github.com/shefin-x3/wa-bot-md.git /root/LyFE/
+RUN git clone https://github.com/lyfe00011/whatsapp-bot-md.git /root/LyFE/
 WORKDIR /root/LyFE/
-RUN npm install supervisor -g
 RUN yarn install --network-concurrency 1
 CMD ["node", "index.js"]
